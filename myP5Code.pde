@@ -13,13 +13,15 @@ draw = function(){
   
 
 
-
-
+ellipse(360,320,75,80);
 
   //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
-
 }
+
+//arc (x,y,w,h,start,stop)
+
+
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
