@@ -11,11 +11,26 @@ draw = function(){
  
   background(255,255,255,0);
   
+//jerry the mouse
+fill (150,70,0)
+arc(360,320,80,60,radians(180),radians(360));
+fill(0,0,0)
+ellipse(338,307,6,6);
 
 
-ellipse(360,320,75,80);
+//tom the cat
+fill (169,169,169);
+ellipse(496,236,110,180);
+ellipse(492,118,70,90);
+triangle(463,92,454,69,476,77);
+triangle(506,79,534,72,523,93);
+fill (0,0,0)
+ellipse(476,120,10,15);
+ellipse(504,119,10,15);
+triangle(484,134,497,134,491,145);
 
-  //Show x y values when mousepressed
+
+//Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
 }
 
