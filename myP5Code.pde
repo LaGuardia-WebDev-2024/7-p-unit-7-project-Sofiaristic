@@ -4,7 +4,10 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
+var mouseXX=0;
+var mouseEYE=0;
+var catXX=0;
+var colorChange=0;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -13,28 +16,36 @@ draw = function(){
   
 //jerry the mouse
 fill (150,70,0)
-arc(360,320,80,60,radians(180),radians(360));
+arc(360+mouseXX,320,80,60,radians(180),radians(360));
 fill(0,0,0)
-ellipse(338,307,6,6);
+//Jerry eye
+ ellipse(338+mouseEYE,307,6,6);
 
 
 //tom the cat
-fill (169,169,169);
-ellipse(496,236,110,180);
-ellipse(492,118,70,90);
-triangle(463,92,454,69,476,77);
-triangle(506,79,534,72,523,93);
-fill (0,0,0)
-ellipse(476,120,10,15);
-ellipse(504,119,10,15);
-triangle(484,134,497,134,491,145);
+fill (169+colorChange,169+colorChange,169+colorChange);
+ellipse(496+catXX,236,110,180);
+ellipse(492+catXX,118,70,90);
+//tom the cat ears
+triangle(463+catXX,92,454+catXX,69,476+catXX,77);
+triangle(506+catXX,79,534+catXX,72,523+catXX,93);
+fill (0+colorChange,0+colorChange,0+colorChange)
+//tom the cat eyes
+ellipse(476+catXX,120,10,15);
+ellipse(504+catXX,119,10,15);
+triangle(484+catXX,134,497+catXX,134,491+catXX,145);
 
 
 //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
-}
+mouseXX-=3
+mouseEYE-=3
+catXX-=4
+colorChange=colorChange-2}
 
-//arc (x,y,w,h,start,stop)
+
+
+
 
 
 
